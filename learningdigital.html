@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="devtut image.png">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+  .card{ transition: all 0.3s;
+
+  }
+  .card:hover{transform: scale(1.05);
+
+  }
+</style>
+<body>
+    <main class="navbar bg-light shadow-sm sticky-top">
+        <div>
+            <img src="google.png" style="width: 250px; cursor: pointer;">
+        </div>
+        <div class="text-secondary">
+            <span class="px-3" style="cursor: pointer;">Online Courses</span>
+            <span class="px-3" style="cursor: pointer;">Certification</span>
+            <span class="px-3" style="cursor: pointer;">Live Training</span>
+            <span class="dropdown">
+                <a class="dropdown-toggle text-secondary" style="text-decoration: none;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Tools & Resources</a></li>
+                  <li><a class="dropdown-item" href="#">Help & FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Feedback</a></li>
+                </ul>
+            </span>
+        </div>
+        <div></div>
+        <div>
+            <span class="px-3 text-primary">Sign in</span>
+            <button class="btn btn-primary">Register</button>
+        </div>
+    </main>
+    <div class="bg-light py-5 px-5 text-secondary">
+        <h1>Online Courses</h1>
+        <p>Discover a range of free learning content designed to help your business or in your career.You<br>
+        can learn by selecting individual modules, or dive right in and take an entire course end-to-end.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="py-5">
+                    <p>CATEGORIES</p>
+                     <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Digital Marketing
+                    </label>
+                  </div>
+                  <div class="form-check py-2 ">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Career Development
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Data and Tech
+                    </label>
+                  </div>
+                </div>
+                <div class="py-5">
+                    <p>COURSE LENGTH</p>
+                     <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Under 2 hours
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      2-10 hours
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      11-20 hours
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      20+ hours
+                    </label>
+                  </div>
+                </div>
+                <div class="py-5">
+                    <p>CERTIFICATION</p>
+                     <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Free certificate
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Paid certificate
+                    </label>
+                  </div>
+                </div>
+                <div class="py-5">
+                    <p>COURSE DIFFICULTY</p>
+                     <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Beginner
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Intermediate
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Advanced
+                    </label>
+                  </div>
+                </div>
+                <div class="py-5">
+                    <p>COURSE PROVIDER</p>
+                     <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Google
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Applied Digital Skills
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Coursera
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Darden School of Business, University of Virginia
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Deakin University
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      FutureLearn
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Goodwill Community Foundation
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Google Cloud
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Grasshoppers
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Monash University
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      National Chiao Tung University
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      OpenClassrooms
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Skillshop
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      The Open University
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Udacity
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      University of Auckland
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        University of Groningen
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        University of Helsinki
+                    </label>
+                  </div>
+                  <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        YouTube
+                    </label>
+                  </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <p class="mt-2">Results: 152 courses</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="1go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="4go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="7go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="10go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                    </div> 
+                    <div class="col-sm-4">
+                        <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: 30rem;">
+                            <img src="2go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Get a business online</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: 30rem;">
+                            <img src="5go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="8go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="11go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="3go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="6go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                         </div>  
+                         <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="9go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                          </div>
+                          <div class="card shadow-sm my-4 bg-light" style="width: 20rem; height: auto;">
+                            <img src="12go.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Fundamentals of digital marketing</h5>
+                              <p class="card-text"> Created by Google</p><br>
+                                <span class="px-3"><i class="fa fa-align-justify" aria-hidden="true"></i>Modules:26</span>
+                                <span class="px-3"><i class="fa fa-clock-o" aria-hidden="true"></i>Hours:40</span><br><br><br><br><br>
+                             <div style="margin-left: 95%; margin-bottom: auto;"> <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> </div>
+                            </div>
+                         </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

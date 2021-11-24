@@ -1,0 +1,60 @@
+.icon{
+    font-size: 30px;
+}
+#you{position: absolute;
+    top: 90px;
+    left: 45%;
+    border-radius: 7px;
+}
+#us{margin-left: auto;
+    font-size: 9px;
+}
+#me{position: absolute;
+    top: 150px;
+    left: 20px;
+    border-radius: 7px;
+    width: 45%;
+
+}
+#am{position: absolute;
+    top: 200px;
+    right: 20px;
+    border-radius: 7px;
+    width: auto
+
+}
+#on{position: absolute;
+    top: 240px;
+    left: 20px;
+    border-radius: 7px;
+    width: auto
+
+}
+#so{position: absolute;
+    top: 290px;
+    right: 20px;
+    border-radius: 7px;
+    width: auto
+
+}
+#no{position: absolute;
+    top: 330px;
+    left: 20px;
+    border-radius: 7px;
+    width: auto
+
+}
+#be{position: absolute;
+    top: 410px;
+    right: 20px;
+    border-radius: 7px;
+    width: auto
+
+}
+#an{position: absolute;
+    top: 485px;
+    left: 20px;
+    border-radius: 7px;
+    width: auto
+    
+}

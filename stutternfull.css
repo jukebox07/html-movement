@@ -1,0 +1,22 @@
+main {
+  background-color: #e6f8f9;
+}
+main .be {
+  color: #1bd3c6;
+  font-size: 30px -5px;
+}
+main #me {
+  background-color: #1bd3c6;
+  border-radius: 5px;
+  border: none;
+}
+main .me {
+  background-color: #1bd3c6;
+  border-radius: 5px;
+  border: none;
+}
+main .he {
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=stutternfull.css.map */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div>
+                        <h1>facebook</h1>
+                        <p id="me">Facebook helps you connect and share<br>with the people in your life </p>
+                     </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="p-3 bg-light">
+                         <input type="text" placeholder="Email address or phone number" class="form-control"><br>
+                         <input type=" text" placeholder="Password" class="form-control"><br>
+                         <button class="btn btn-primary form-control">Log In</button><br>
+                        <center><a class="text-center" href="#">Forgotten password?</a><hr></center>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                            Create New Account
+                          </button>
+                    </div><br>
+                    <center><h6>Create a page for a celebrity, band or business</h6></center>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">
+                      Sign Up <br>
+                      <i>It's quick and easy</i>
+                    </h4><br>
+                  
+                  <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                </div>
+
+                <div class="modal-body my-2">
+                     <section class="d-flex">
+                            <input class="form-control mr-3" type="text" placeholder="First name">
+                            <input class="form-control" type="text" placeholder="Surname">
+                     </section>
+                     <div>
+                        <input type="text" placeholder="Mobile number or email address" class="form-control">
+
+                      </div>
+                      <div>
+                        <input type="text" placeholder="New password" class="form-control">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

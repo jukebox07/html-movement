@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Documents/html/css/bootstrap.min.css">
+    <script src="../../../Documents/html/script.js"></script>
+    <title>E-Reciept</title>
+    <style>
+        table,td,tr,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table id="recieptTable" style="width: 50%;">
+            <tr>
+                <th>S/N</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Edit</th>
+            </tr>
+
+            <tbody id="tableBd">
+                <tr id="rollTd">
+                    <td>1</td>
+                    <td><input type="text" id= "product"></td>
+                    <td><input type="text" id= "price"></td>
+                    <td><input type="text" id= "quantity"></td>
+                    <td><input type="text" id= "total"></td>
+                    <td><button class="btn p-0">x</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add" class="btn btn-success">+</button>
+        <button id="remove" class="btn btn-danger">-</button>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<script>
+    let index = 1
+$('#add').click(function(params){
+    let tableBody = `<tr id="rollTd">
+                <td>${index +1}</td>
+                <td><input type="text" id= "product"></td>
+                <td><input type="text" id= "price"></td>
+                <td><input type="text" id= "quantity"></td>
+                <td><input type="text" id= "total"></td>
+                <td><button class="btn">x</button></td>
+
+            </tr>`
+            index++;
+            $('#tableBd').append(tableBody);
+            calc();
+})
+let calc = ()=>{
+                $('#rollTd input').on('keyup', function(){
+                    let price = $(this).closest('#rollTd').find('#price').val()
+                    let quantity = $(this).closest('#rollTd').find('#quantity').val()
+                    let total = parseInt(price) * parseInt(quantity)
+                    $(this).closest('#rollTd').find('#total').val(total)
+                })
+            }
+            calc()
+            $('#remove').click(function(){
+                $('#tableBd tr').last('tr').remove('tr')
+                index--;
+            })
+</script>

@@ -1,0 +1,48 @@
+@import "stu";
+@import "border-radius";
+$ben: rgb(230,248,249);
+$gen: rgb(27,180,176);
+$den: rgb(27,22,66) ;
+$men: 30px;
+$ken: 3px;
+
+main{background-color: $ben;
+   .be{color: $gen;
+        font-size:20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+   #me{background-color: $gen;
+        border-radius: $f10;
+         border: none;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;}
+   .me{background-color: $gen;
+        border-radius: $ken;
+        border: none;}
+        #he{border-radius: $ken;}
+    }
+main.on{background-color: $ben;
+    h1{font-size: 60px;}
+
+}
+@mixin ope($yemi) {
+    color: white;
+    &:hover{color: $yemi;}
+
+}
+#a{@include ope(red);}
+#b{@include ope(yellow);}
+#c{@include ope(green);}
+#d{@include ope(cyan);}
+#e{@include ope(blue);}
+#f{@include ope(rgb(158, 76, 76));}
+#g{@include ope(rgb(190, 146, 146));}
+#h{@include ope(rgb(19, 51, 32));}
+#i{@include ope(rgb(255, 123, 0));}
+#j{@include ope(rgb(255, 0, 128));}
+#k{@include ope(rgb(0, 183, 255));}
+#l{@include ope(rgb(195, 0, 255));}
+#m{@include ope(rgb(228, 135, 135));}
+

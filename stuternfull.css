@@ -1,0 +1,125 @@
+main {
+  background-color: #e6f8f9;
+}
+main .be {
+  color: #1bb4b0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+main #me {
+  background-color: #1bb4b0;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+main .me {
+  background-color: #1bb4b0;
+  border-radius: 3px;
+  border: none;
+}
+main #he {
+  border-radius: 3px;
+}
+
+main.on {
+  background-color: #e6f8f9;
+}
+main.on h1 {
+  font-size: 60px;
+}
+
+#a {
+  color: white;
+}
+#a:hover {
+  color: red;
+}
+
+#b {
+  color: white;
+}
+#b:hover {
+  color: yellow;
+}
+
+#c {
+  color: white;
+}
+#c:hover {
+  color: green;
+}
+
+#d {
+  color: white;
+}
+#d:hover {
+  color: cyan;
+}
+
+#e {
+  color: white;
+}
+#e:hover {
+  color: blue;
+}
+
+#f {
+  color: white;
+}
+#f:hover {
+  color: #9e4c4c;
+}
+
+#g {
+  color: white;
+}
+#g:hover {
+  color: #be9292;
+}
+
+#h {
+  color: white;
+}
+#h:hover {
+  color: #133320;
+}
+
+#i {
+  color: white;
+}
+#i:hover {
+  color: #ff7b00;
+}
+
+#j {
+  color: white;
+}
+#j:hover {
+  color: #ff0080;
+}
+
+#k {
+  color: white;
+}
+#k:hover {
+  color: #00b7ff;
+}
+
+#l {
+  color: white;
+}
+#l:hover {
+  color: #c300ff;
+}
+
+#m {
+  color: white;
+}
+#m:hover {
+  color: #e48787;
+}
+
+/*# sourceMappingURL=stuternfull.css.map */
